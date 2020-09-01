@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="static/images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/Tstyle.css" type="text/css">
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <title>页面中常见返回顶部效果</title>
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop()>150){
+                    $('#back').fadeIn(1000);
+                }else{
+                    $('#back').fadeOut(1000);
+                }
+            }),
+            $('#back').click(function(){
+                $(window).scrollTop =0
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--锚点-->
+    <!--<a href="#back"></a>-->
+    <div>网页内容</div>
+    <p id="back"><a href=""><span class="fa fa-arrow-circle-up"></span><br>返回顶部</a></p>
+</body>
+</html>

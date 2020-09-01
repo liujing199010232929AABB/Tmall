@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/Rstyle.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="static/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#nav li').stop().animate({'marginLeft':'-65px'},1000);
+            $('li').hover(
+                function(){
+                    $(this).stop().animate({'marginLeft':'-2px'},500)
+                },
+                function(){
+                    $(this).stop().animate({'marginLeft':'-65px'},500)
+                }
+            )
+        })
+    </script>
+    <title>漂亮的jQuery左边划出导航</title>
+</head>
+<body>
+    <ul id="nav">
+        <li class="li1"><span class="fa fa-tags"></span></li>
+        <li class="li2"><span class="fa fa-address-card"></span></li>
+        <li class="li3"><span class="fa fa-grav"></span></li>
+        <li class="li4"><span class="fa fa-user-o"></span></li>
+        <li class="li5"><span class="fa fa-handshake-o"></span></li>
+    </ul>
+</body>
+</html>

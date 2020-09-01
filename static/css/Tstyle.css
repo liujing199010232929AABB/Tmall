@@ -1,0 +1,9 @@
+/*页面中常见返回顶部效果*/
+*{margin:0px;padding:0px;}
+body{text-align:center;}
+body p a{text-decoration:none;color:#fff;}
+div{width:1200px;height:1500px;background:#eee;margin:20px auto;}
+p#back{text-align:center;position:fixed;bottom:100px;right:60px;background:#ccc;border-radius:3px;height:50px;width:80px;display:none;}
+
+
+

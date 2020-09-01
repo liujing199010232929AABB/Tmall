@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="static/images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/Shstyle.css" type="text/css">
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <title>页面中常用平级下拉菜单（手风琴）</title>
+    <script type="text/javascript">
+        $(function(){
+            // $('.two').hide();
+            $('.two').css('display','none')
+            var one=$('.one')
+            var two=$('.two')
+            $('.one').each(function(i){
+                $(this).click(function(){
+                    if($(two[i]).css('display')=='none'){
+                        $(two[i]).slideDown(400)
+                    }else{
+                        $(two[i]).slideUp(400)
+                    }
+                }),
+                $(this).mouseover(function(){
+                    if($(two[i]).css('display')=='none'){
+                        $(two[i]).slideDown(200)
+                    }
+                }),
+                $(this).mouseout(function(){
+                    if($(two[i]).css('display')!='none'){
+                        $(two[i]).slideUp(200)
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="nav">
+        <div class="parent">
+            <div class="one">
+                <strong>个人中心</strong>
+            </div>
+            <div class="two">
+                <div><a href="">我的信息</a></div>
+                <div><a href="">系统通知</a></div>
+                <div><a href="">短信息</a></div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="one">
+                <strong>课程中心</strong>
+            </div>
+            <div class="two">
+                <div><a href="">我的信息</a></div>
+                <div><a href="">系统通知</a></div>
+                <div><a href="">短信息</a></div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="one">
+                <strong>校内讨论</strong>
+            </div>
+            <div class="two">
+                <div><a href="">我的信息</a></div>
+                <div><a href="">系统通知</a></div>
+                <div><a href="">短信息</a></div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="one">
+                <strong>资源中心</strong>
+            </div>
+            <div class="two">
+                <div><a href="">我的信息</a></div>
+                <div><a href="">系统通知</a></div>
+                <div><a href="">短信息</a></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
